@@ -243,7 +243,7 @@ class DataAnalysis:
             self.save_result(data=test_data_raw,
                              file='test.csv',
                              path=self.path + 'predictions/',
-                             addition='_prediction_' + model.__class__.__name__)
+                             addition='_prediction_' + self.algorithm)
         else:
             self.save_result(data=test_data_raw,
                              path=self.path + 'predictions/',
