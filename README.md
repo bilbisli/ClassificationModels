@@ -60,23 +60,16 @@ example:
 ## Preparing and running within a Virtual Enviroment:
 
 <!-- ##### -- option 1 -- -->
-	<ul>
-		<li> step 1: create a virtual enviroment (python must be installed before hand) </li>
-		<ul>
-			<li> 1.1. open a shell within the project folder ("ClassifyingModels") </li>
-			<li> 1.1.1 on Windows run the command:  py -m venv env </li>
-			<li> 1.1.2 on Unix/MacOs run the command: python3 -m venv env </li>
-		</ul>
-		<li>step 2: activate the enviroment</li>
-		<ul>
-			<li>2.1 on Windows run the command: .\env\Scripts\activate</li>
-			<li>2.2 on Unix/MacOs run the command: source env/bin/activate</li>
-		</ul>
-		<li>step 3: install requirements</li>
-		<ul>
-			<li>3.1 on Windows run the command: py -m pip install -r requirements.txt</li>
-			<li>3.2 on Unix/MacOs run the command: python3 -m pip install -r requirements.txt</li>
-		</ul>
+	1. step 1: create a virtual enviroment (python must be installed before hand)
+		1.1. open a shell within the project folder ("ClassifyingModels")
+		1.1.1. on Windows run the command:  py -m venv env
+		1.1.2. on Unix/MacOs run the command: python3 -m venv env
+	2. step 2: activate the enviroment
+		2.1. on Windows run the command: .\env\Scripts\activate
+		2.2. on Unix/MacOs run the command: source env/bin/activate
+	3. step 3: install requirements
+		3.1. on Windows run the command: py -m pip install -r requirements.txt
+		3.2. on Unix/MacOs run the command: python3 -m pip install -r requirements.txt
 	</ul>
 	
 ##### -- option 2 --
