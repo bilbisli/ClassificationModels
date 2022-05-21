@@ -59,7 +59,7 @@ example:
   
 ## Preparing and running within a Virtual Enviroment:
 
-<!-- ##### -- option 1 -- -->
+##### -- option 1 --
 	1. step 1: create a virtual enviroment (python must be installed before hand)
 		1.1. open a shell within the project folder ("ClassifyingModels")
 		1.1.1. on Windows run the command:  py -m venv env
@@ -70,7 +70,6 @@ example:
 	3. step 3: install requirements
 		3.1. on Windows run the command: py -m pip install -r requirements.txt
 		3.2. on Unix/MacOs run the command: python3 -m pip install -r requirements.txt
-	</ul>
 	
 ##### -- option 2 --
 	1. on Windows run the bat file within the project folder: "run_windows.bat"
@@ -78,7 +77,7 @@ example:
 
 When the enviroment is all set, the program can now be run.
 
-Important!!
+#### Important!!
 After either options, when work with the program is finished, the enviroment needs to be deactivated:
 	In the active enviroment's open shell run the command: deactivate
 	
