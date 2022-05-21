@@ -32,10 +32,11 @@ This module provides the infrastructure for defining abstract base classes (ABCs
  - copy
 import copy to use for deep copy
 
-
+ - convert_to_list
+This function converts given data to a list
 
 ### import of file entropy
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
  - Fraction
 used to convert two numbers to number rational and we used to check if object is the same type of fraction
  - log2
@@ -43,7 +44,7 @@ used to calculate entropy
 
 ### import of file entropy_discretization
 
--combinations
+- combinations
 It return r-length tuples in sorted order with no repeated elements we use in entropy with genretor his return one tuples from the list
 
 ## How to add custom classification algorithm:
@@ -55,10 +56,9 @@ step 2: in the package/folder "classification_algorithms" within the "__init__.p
 example: 
 	from project_util.classifier_algorithm import ClassifierAlgorithm
 	class AlgorithmName(ClassifierAlgorithm):
-#####################################################################################################################
   
 ## Preparing and running within a Virtual Enviroment:
-#####################################################################################################################
+
 -- option 1 --
 	step 1: create a virtual enviroment (python must be installed before hand)
 		1.1. open a shell within the project folder ("ClassifyingModels")
@@ -80,9 +80,7 @@ When the enviroment is all set, the program can now be run.
 Important!!
 After either options, when work with the program is finished, the enviroment needs to be deactivated:
 	In the active enviroment's open shell run the command: deactivate
-
-##################################################################################################################### end enviroment preparation
-
+	
 ## How to Run :
 #### Command help section - To see this text (the help section) via the program  - run the command (in the open shell): classification_models.py -h
 
