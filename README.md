@@ -59,7 +59,7 @@ example:
   
 ## Preparing and running within a Virtual Enviroment:
 
-##### -- option 1 --
+<!-- ##### -- option 1 -- -->
 	<ul>
 		<li> step 1: create a virtual enviroment (python must be installed before hand) </li>
 		<ul>
