@@ -123,46 +123,7 @@ For bugs & issues: bilbisli@gmail.com
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// end command help section
 
-Build Model help section - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py bm -h
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
-
-usage: classification_models.py build_model [-h] [--algorithm ALGORITHM_TYPE] [--implementation IMPLEMENTATION_TYPE]
-                                            [--model_name MODEL_NAME]
-                                            POST_PREPROCESSED_FILE_NAME
-
-positional arguments:
-  POST_PREPROCESSED_FILE_NAME
-                        Training dataset file name (already undergone preprocessing). example: train_clean.csv
-
-options:
-  -h, --help            show this help message and exit
-  --algorithm ALGORITHM_TYPE
-                        Model algorithm type. example: --algorithm algorithm_type.
-                        options: naive_bayes, decision_tree, k_neighbors, k_means
-  --implementation IMPLEMENTATION_TYPE
-                        Model algorithm type. example: --implementaion built_in
-  --model_name MODEL_NAME
-                        The name of the model to be saved (as pickle). example: --model_name decision_tree_model_1
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////// end Build Model help section
-
-Run Model help section - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py rm -h
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-positional arguments:
-  TEST_FILE_NAME        Test dataset file name. example: test.csv
-
-options:
-  -h, --help            show this help message and exit
-  --model_name TEST_FILE_NAME
-                        Model file name that is already saved (as pickle). example: --model_name decision_tree_model_1
-  --result_name PREDICTION_RESULT_FILE_NAME
-                        Prediction result file name to save. example: --result_name test_predicition_DecisionTree_1.csv
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-Run Mode help section (example for 'all') - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py a -h
+Run All mode help section - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py a -h
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -195,5 +156,74 @@ options:
   --result_name PREDICTION_RESULT_FILE_NAME
                         Prediction result file name to save. example: --result_name test_predicition_DecisionTree_1.csv
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////// end Run Mode help section
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////// end Run All Mode help section
+
+Pre-Processing mode help section - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py pp -h
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+usage: classification_models.py preprocessing [-h] [--fill FILL_BLANKS_TYPE] [--normalization] [--no-normalization] [--discretization DISCRETIZATION_TYPE]
+                                              [--bins BIN_NUMBER [BIN_NUMBER ...]] [--implementation IMPLEMENTATION_TYPE] [--save_name FILE_NAME]
+                                              TRAINING_FILE_NAME
+
+positional arguments:
+  TRAINING_FILE_NAME    Training dataset file name. example: train.csv
+
+options:
+  -h, --help            show this help message and exit
+  --fill FILL_BLANKS_TYPE
+                        Fill blank cells parameter. example: --fill all
+  --normalization       Apply normalization. example: --normalization
+  --no-normalization    Do not apply normalization. example: --no-normalization
+  --discretization DISCRETIZATION_TYPE
+                        Discretization type. example: --discretization equal_width
+  --bins BIN_NUMBER [BIN_NUMBER ...]
+                        Number of bins (intervals) the continues data will be divided to. example: --bins 5
+  --implementation IMPLEMENTATION_TYPE
+                        Apply built in/own implementations of classifying/discretization algorithms(if exists).
+                        example: --implementation own
+  --save_name FILE_NAME
+                        The name of the file to be saved after processing. example: name.csv
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////// end preprocessing help section
+
+Build Model mode help section - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py bm -h
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+usage: classification_models.py build_model [-h] [--algorithm ALGORITHM_TYPE] [--implementation IMPLEMENTATION_TYPE]
+                                            [--model_name MODEL_NAME]
+                                            POST_PREPROCESSED_FILE_NAME
+
+positional arguments:
+  POST_PREPROCESSED_FILE_NAME
+                        Training dataset file name (already undergone preprocessing). example: train_clean.csv
+
+options:
+  -h, --help            show this help message and exit
+  --algorithm ALGORITHM_TYPE
+                        Model algorithm type. example: --algorithm algorithm_type.
+                        options: naive_bayes, decision_tree, k_neighbors, k_means
+  --implementation IMPLEMENTATION_TYPE
+                        Model algorithm type. example: --implementaion built_in
+  --model_name MODEL_NAME
+                        The name of the model to be saved (as pickle). example: --model_name decision_tree_model_1
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////// end Build Model help section
+
+Run Model mode help section - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py rm -h
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+positional arguments:
+  TEST_FILE_NAME        Test dataset file name. example: test.csv
+
+options:
+  -h, --help            show this help message and exit
+  --model_name TEST_FILE_NAME
+                        Model file name that is already saved (as pickle). example: --model_name decision_tree_model_1
+  --result_name PREDICTION_RESULT_FILE_NAME
+                        Prediction result file name to save. example: --result_name test_predicition_DecisionTree_1.csv
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////// end Run Model mode help section
+
+
 ##################################################################################################################### end How to Run
