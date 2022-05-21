@@ -78,100 +78,26 @@ example:
 When the enviroment is all set, the program can now be run.
 
 #### Important!!
-After either options, when work with the program is finished, the enviroment needs to be deactivated:
-	In the active enviroment's open shell run the command: deactivate
+After either options, when work with the program is finished, the enviroment needs to be deactivated:</br>
+	- In the active enviroment's open shell run the command: deactivate
 	
 ## How to Run :
-#### Command help section - To see this text (the help section) via the program  - run the command (in the open shell): classification_models.py -h
+#### Command help section - To see this text (the help section) via the program  - run the command (in the open shell):<br/> classification_models.py -h
 
-usage: classification_models.py [-h] WORKING_MODE ... DATA_PATH
-
-Description: Analyse data with data mining tools.
-
-positional arguments:
-  DATA_PATH             Path directory of dataset files.
-                        example: C:/Users/user/Desktop/data
-                                        or
-                                 ./resources
-
-options:
-  -h, --help            show this help message and exit
-
-run modes:
-  run modes define which mode the system should run in the current execution.
-  example: classification_models.py all train.csv test.csv C:/Users/user/Desktop/data
-                or
-           classification_models.py preprocessing train.csv ./resources
-
-  WORKING_MODE          run mode help
-    preprocessing (p, pp)
-                        in this mode only preprocessing is applied
-    build_model (bm)    in this mode only model build is is done
-    run_model (rm, r)   in this mode the only operation done is running a model on test data
-    all (ALL, a, A)     in this mode the whole program will be executed
-
-Made by Israel Avihail.
-For bugs & issues: bilbisli@gmail.com
-
-#### Build Model help section - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py bm -h
-usage: classification_models.py build_model [-h] [--algorithm ALGORITHM_TYPE] [--implementation IMPLEMENTATION_TYPE]
-                                            [--model_name MODEL_NAME]
-                                            POST_PREPROCESSED_FILE_NAME
-
-positional arguments:
-  POST_PREPROCESSED_FILE_NAME
-                        Training dataset file name (already undergone preprocessing). example: train_clean.csv
-
-options:
-  -h, --help            show this help message and exit
-  --algorithm ALGORITHM_TYPE
-                        Model algorithm type. example: --algorithm algorithm_type.
-                        options: naive_bayes, decision_tree, k_neighbors, k_means
-  --implementation IMPLEMENTATION_TYPE
-                        Model algorithm type. example: --implementaion built_in
-  --model_name MODEL_NAME
-                        The name of the model to be saved (as pickle). example: --model_name decision_tree_model_1
-
-#### Run Model help section - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py rm -h
-
-positional arguments:
-  TEST_FILE_NAME        Test dataset file name. example: test.csv
-
-options:
-  -h, --help            show this help message and exit
-  --model_name TEST_FILE_NAME
-                        Model file name that is already saved (as pickle). example: --model_name decision_tree_model_1
-  --result_name PREDICTION_RESULT_FILE_NAME
-                        Prediction result file name to save. example: --result_name test_predicition_DecisionTree_1.csv
-
+![Command help screenshot](readme_images/command_help.png)
 
 #### Run Mode help section (example for 'all') - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py a -h
 
-usage: classification_models.py all [-h] [--fill FILL_BLANKS_TYPE] [--normalization] [--no-normalization]
-                                    [--discretization DISCRETIZATION_TYPE] [--bins BIN_NUMBER [BIN_NUMBER ...]]
-                                    [--algorithm ALGORITHM_TYPE] [--implementation IMPLEMENTATION_TYPE]
-                                    [--result_name PREDICTION_RESULT_FILE_NAME]
-                                    TRAINING_FILE_NAME TEST_FILE_NAME
+![Run Mode help screenshot](readme_images/run_all_mode_help.png)
 
-positional arguments:
-  TRAINING_FILE_NAME    Training dataset file name. example: train.csv
-  TEST_FILE_NAME        Test dataset file name. example: test.csv
+#### Build Model help section - To see this text (the help section) via the program - run the command (in the open shell):<br/> classification_models.py bm -h
 
-options:
-  -h, --help            show this help message and exit
-  --fill FILL_BLANKS_TYPE
-                        Fill blank cells parameter. example: --fill all
-  --normalization       Apply normalization. example: --normalization
-  --no-normalization    Do not apply normalization. example: --no-normalization
-  --discretization DISCRETIZATION_TYPE
-                        Discretization type. example: --discretization equal_width
-  --bins BIN_NUMBER [BIN_NUMBER ...]
-                        Number of bins (intervals) the continues data will be divided to. example: --bins=5
-  --algorithm ALGORITHM_TYPE
-                        Model algorithm type. example: --algorithm algorithm_type
-                        options: naive_bayes, decision_tree, k_neighbors, k_means
-  --implementation IMPLEMENTATION_TYPE
-                        Apply built in/own implementations of classifying/discretization algorithms(if exists).
-                        example: --implementation own
-  --result_name PREDICTION_RESULT_FILE_NAME
-                        Prediction result file name to save. example: --result_name test_predicition_DecisionTree_1.csv
+![Build Model help screenshot](readme_images/build_model_help.png)
+
+#### Run Model help section - To see this text (the help section) via the program - run the command (in the open shell):<br/> classification_models.py rm -h
+
+![Run Model help screenshot](readme_images/run_model_help.png)
+
+#### Run Preprocessing help section - To see this text (the help section) via the program - run the command (in the open shell):<br/> classification_models.py pp -h
+
+![Run Model help screenshot](readme_images/preprocessing_help.png)
