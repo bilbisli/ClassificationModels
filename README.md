@@ -84,9 +84,7 @@ After either options, when work with the program is finished, the enviroment nee
 ##################################################################################################################### end enviroment preparation
 
 ## How to Run :
-#####################################################################################################################
-Command help section - To see this text (the help section) via the program  - run the command (in the open shell): classification_models.py -h
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#### Command help section - To see this text (the help section) via the program  - run the command (in the open shell): classification_models.py -h
 
 usage: classification_models.py [-h] WORKING_MODE ... DATA_PATH
 
@@ -117,11 +115,7 @@ run modes:
 Made by Israel Avihail.
 For bugs & issues: bilbisli@gmail.com
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////// end command help section
-
-Build Model help section - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py bm -h
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
-
+#### Build Model help section - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py bm -h
 usage: classification_models.py build_model [-h] [--algorithm ALGORITHM_TYPE] [--implementation IMPLEMENTATION_TYPE]
                                             [--model_name MODEL_NAME]
                                             POST_PREPROCESSED_FILE_NAME
@@ -140,11 +134,7 @@ options:
   --model_name MODEL_NAME
                         The name of the model to be saved (as pickle). example: --model_name decision_tree_model_1
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////// end Build Model help section
-
-Run Model help section - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py rm -h
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#### Run Model help section - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py rm -h
 
 positional arguments:
   TEST_FILE_NAME        Test dataset file name. example: test.csv
@@ -156,11 +146,8 @@ options:
   --result_name PREDICTION_RESULT_FILE_NAME
                         Prediction result file name to save. example: --result_name test_predicition_DecisionTree_1.csv
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-Run Mode help section (example for 'all') - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py a -h
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+#### Run Mode help section (example for 'all') - To see this text (the help section) via the program - run the command (in the open shell): classification_models.py a -h
 
 usage: classification_models.py all [-h] [--fill FILL_BLANKS_TYPE] [--normalization] [--no-normalization]
                                     [--discretization DISCRETIZATION_TYPE] [--bins BIN_NUMBER [BIN_NUMBER ...]]
@@ -190,6 +177,3 @@ options:
                         example: --implementation own
   --result_name PREDICTION_RESULT_FILE_NAME
                         Prediction result file name to save. example: --result_name test_predicition_DecisionTree_1.csv
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////// end Run Mode help section
-##################################################################################################################### end How to Run
