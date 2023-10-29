@@ -1,51 +1,50 @@
 # ClassificationModels
-Analyse data with data mining tools using this program.
+Analyse data with data mining tools using this program
 ### Author:
 Israel Avihail	
-
+## Project UML
+[project UM](https://github.com/bilbisli/ClassificationModels/blob/master/project%20UML.pdf)
 ## Required libraries:
-### import of file data_analysis
- - argparse
-the object will hold all the information necessary to parse the command line into Python data types.
- - on
-os.path.exists Used to check if the path exists, if isn't exists we use os.mkdir to create.
- - pickle
-it serializes objects so they can be saved to a file, and loaded in a program again later on.
- - Sequence
-used for check if the object is type of Sequence.
- - operator.itemgetter
-return to us item all the time we use in genrator.
- - numpy
+### imports of file data_analysis
+ - argparse:
+used to provide and parse the command line interface
+ - os:
+os.path.exists Used to check if the path exists, if it doesn't exist we use os.mkdir to create it
+ - pickle:
+serializes objects so they can be saved to a file and loaded again later on
+ - Sequence:
+used to check if an object is a Sequence
+ - numpy:
 numpy is a Python library used for working with arrays
-- pandas
-uesd to read csv files and do operations on it, Intervals used for us to check if object is the same type, pd.IntervalIndex use to convert to interval
- - stats
-We import scipy.stats to use the entropy function which represents the effective size index of probability space.
- - sklearn
+- pandas:
+uesd to read csv files and commit operations on it, Intervals is used to check if an object is the same type, pd.IntervalIndex use to convert to interval
+ - stats:
+we import scipy.stats to use the entropy function which represents the effective size index of probability space
+ - sklearn:
 Kmeans, GaussianNB, CategoricalNB, KNeighborsClassifier, StandardScaler:  used for calculation and generation of Confusion Matrix PDFs
-### import of file Classifier_Algorithm
- - abc
-This module provides the infrastructure for defining abstract base classes (ABCs) in Python, we used to do interface
+### imports of file Classifier_Algorithm
+ - abc:
+this module provides the infrastructure for defining abstract base classes (ABCs) in Python, we used to do interface
 
-### import of file dictionary_tree
+### imports of file dictionary_tree
 
- - copy
+ - copy:
 import copy to use for deep copy
 
- - convert_to_list
-This function converts given data to a list
+ - convert_to_list:
+this function converts given data to a list
 
-### import of file entropy
+### imports of file entropy
 
- - Fraction
-used to convert two numbers to number rational and we used to check if object is the same type of fraction
- - log2
+ - Fraction:
+used to convert two numbers (numerator and denominator) to a rational number, we used it to check if an object is a fraction and to work with fractons for precision purposes
+ - log2:
 used to calculate entropy
 
-### import of file entropy_discretization
+### imports of file entropy_discretization
 
-- combinations
-It return r-length tuples in sorted order with no repeated elements we use in entropy with genretor his return one tuples from the list
+- combinations:
+used to return r-length tuple combinations in sorted order with no repeated elements, we used it in entropy to generate indexes for various cuts of the data up until cuts in the size of the desired bins (to calculate the entropy of the different cuts) 
 
 ## How to add custom classification algorithm:
 	1. step 1: add the algorithem to package/folder of "classification_algorithms" within the project
