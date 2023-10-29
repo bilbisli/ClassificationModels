@@ -3,7 +3,7 @@ Analyse data with data mining tools using this program
 ### Author:
 Israel Avihail	
 ## Project UML
-[project UM](https://github.com/bilbisli/ClassificationModels/blob/master/project%20UML.pdf)
+[project UML](https://github.com/bilbisli/ClassificationModels/blob/master/project%20UML.pdf)
 ## Required libraries:
 ### imports of file data_analysis
  - argparse:
